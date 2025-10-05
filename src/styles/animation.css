@@ -1,7 +1,7 @@
 body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  /* animation: degradeAnimado 15s ease infinite; */
+  animation: degradeAnimado 15s ease infinite;
 }
 
 @keyframes degradeAnimado {
@@ -37,6 +37,20 @@ main.container {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+.ImgAnimation {
+  opacity: 1;
+  animation: Fade 1s linear;
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
